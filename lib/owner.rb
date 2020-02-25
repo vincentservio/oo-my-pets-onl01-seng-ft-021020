@@ -61,14 +61,14 @@ end
 def sell_pets 
   Dog.all.each do |b| 
     if b.owner == self 
-      dog.mood = "nervous" 
-      dog.owner = nil 
+      b.mood = "nervous" 
+      b.owner = nil 
     end 
   end 
    Cat.all.each do |c|
-     if cat.owner == self 
-       cat.mood = 'nervous'
-       dog.owner = nil 
+     if c.owner == self 
+       c.mood = 'nervous'
+       c.owner = nil 
 end 
 end
 end
