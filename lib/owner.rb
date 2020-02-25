@@ -60,7 +60,7 @@ end
 
 def sell_pets 
   Dog.all.each do |b| 
-    if dog.owner == self 
+    if b.owner == self 
       dog.mood = "nervous" 
       dog.owner = nil 
     end 
